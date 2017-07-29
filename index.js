@@ -25,17 +25,17 @@ class Examples extends React.Component {
     return [
       {
         title: 'Bottom Toolbar',
-        Component: BottomToolbarExample,
+        component: BottomToolbarExample,
       }, {
         title: 'Page',
-        Component: PageExample
+        component: PageExample
       }
     ]
   }
 
   goto(example) {
     this.props.navigator.pushPage({
-      component: example.Component,
+      component: example.component,
       props: {
         key: example.title
       }
