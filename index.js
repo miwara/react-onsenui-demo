@@ -11,6 +11,7 @@ import {
 } from 'react-onsenui';
 
 import PageExample from './examples/Page';
+import BackButtonExample from './examples/BackButton';
 import BottomToolbarExample from './examples/BottomToolbar';
 
 class Examples extends React.Component {
@@ -29,6 +30,9 @@ class Examples extends React.Component {
       }, {
         title: 'Page',
         component: PageExample
+      }, {
+        title: 'Back Button',
+        component: BackButtonExample
       }
     ]
   }
