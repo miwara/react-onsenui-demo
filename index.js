@@ -12,6 +12,7 @@ import {
 
 import PageExample from './examples/Page';
 import ListExample from './examples/List';
+import LazyListExample from './examples/LazyList';
 import CarouselExample from './examples/Carousel';
 import RowColumnExample from './examples/RowColumn';
 import BackButtonExample from './examples/BackButton';
@@ -45,6 +46,9 @@ class Examples extends React.Component {
       }, {
         title: 'List',
         component: ListExample
+      }, {
+        title: 'LazyList',
+        component: LazyListExample
       }
     ]
   }
