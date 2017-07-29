@@ -11,6 +11,7 @@ import {
 } from 'react-onsenui';
 
 import PageExample from './examples/Page';
+import CarouselExample from './examples/Carousel';
 import RowColumnExample from './examples/RowColumn';
 import BackButtonExample from './examples/BackButton';
 import BottomToolbarExample from './examples/BottomToolbar';
@@ -37,6 +38,9 @@ class Examples extends React.Component {
       }, {
         title: 'Row & Column',
         component: RowColumnExample
+      }, {
+        title: 'Carousel',
+        component: CarouselExample
       }
     ]
   }
