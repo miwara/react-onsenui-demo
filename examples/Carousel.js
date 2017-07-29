@@ -24,11 +24,27 @@ export default class extends React.Component {
       ]
     };
     this.goTo = this.goTo.bind(this);
+    this.moveRight = this.moveRight.bind(this);
+    this.moveLeft = this.moveLeft.bind(this);
   }
 
   goTo(number) {
     console.log('number', number);
     this.setState({index: number});
+  }
+
+  moveRight(number) {
+    console.log('number', number);
+    if (number != this.state.items.length - 1) {
+      this.setState({index: number + 1});
+    }
+  }
+
+  moveLeft(number) {
+    console.log('number', number);
+    if (number != 0) {
+      this.setState({index: number - 1});
+    }
   }
 
   render() {
@@ -57,8 +73,8 @@ export default class extends React.Component {
       </Carousel>
 
         <BottomToolbar>
-        <ToolbarButton style={{float: 'right'}} onClick={this.moveRight}>Next</ToolbarButton>
-        <ToolbarButton style={{float: 'left'}} onClick={this.moveLeft}>Prev</ToolbarButton>
+        <ToolbarButton style={{float: 'right'}} onClick={() => this.moveRight(this.state.index)}>Next</ToolbarButton>
+        <ToolbarButton style={{float: 'left'}} onClick={() => this.moveLeft(this.state.index)}>Prev</ToolbarButton>
         </BottomToolbar>
         </Page>
     );
