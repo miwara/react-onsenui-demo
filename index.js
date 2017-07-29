@@ -10,6 +10,7 @@ import {
   ListItem
 } from 'react-onsenui';
 
+import PageExample from './examples/Page';
 import BottomToolbarExample from './examples/BottomToolbar';
 
 class Examples extends React.Component {
@@ -25,6 +26,9 @@ class Examples extends React.Component {
       {
         title: 'Bottom Toolbar',
         Component: BottomToolbarExample,
+      }, {
+        title: 'Page',
+        Component: PageExample
       }
     ]
   }
