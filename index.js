@@ -13,6 +13,7 @@ import {
 import PageExample from './examples/Page';
 import ListExample from './examples/List';
 import LazyListExample from './examples/LazyList';
+import TabbarExample from './examples/Tabbar';
 import CarouselExample from './examples/Carousel';
 import RowColumnExample from './examples/RowColumn';
 import BackButtonExample from './examples/BackButton';
@@ -43,6 +44,9 @@ class Examples extends React.Component {
       }, {
         title: 'Carousel',
         component: CarouselExample
+      }, {
+        title: 'Tabbar',
+        component: TabbarExample
       }, {
         title: 'List',
         component: ListExample
